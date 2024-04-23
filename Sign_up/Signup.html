@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        .center-text {
+            text-align: center;
+        }
+        
+        .styled-input {
+            width: 200px;
+            height: 40px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+            margin-bottom: 10px; /* Add some spacing between inputs */
+        }
+        
+        .styled-check {
+            margin-right: 5px;
+        }
+
+        .style-btn {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 10px; /* Add some spacing between buttons */
+        }
+
+        .style-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="center-text">
+            <h1>Sign up</h1>
+        
+            <div>
+                <label for="fname"><input type="text" placeholder="First Name" class="styled-input"></label>
+                <label for="lname"><input type="text" placeholder="Last Name" class="styled-input"></label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="male" class="styled-check">
+                <label for="male" class="styled-label">Male</label>
+                <input type="radio" name="gender" id="female" class="styled-check">
+                <label for="female" class="styled-label">Female</label>
+            </div>
+            <div>
+                <label for="bday" class="styled-label">Select your birthday:</label>
+                <input type="date" name="bday" id="bday" class="styled-input">
+            </div>
+            <div>
+                <input type="email" id="email" name="email" placeholder="Email Address" class="styled-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <input type="tel" id="phone" name="phone" placeholder="123-45-678" class="styled-input" >
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="style-btn">
+                <input type="button" value="Back" class="style-btn" onclick="window.history.go(-1)">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
